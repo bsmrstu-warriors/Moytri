@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <title>Info windows</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+	  
+	 
+
+      function initMap() {
+		
+		var uluru= {lat: 23.794972,  lng: 90.392350};
+        var point1 = {lat: 23.794988, lng: 90.399622};
+        var point2 = {lat: 23.798290, lng: 90.398990};
+        var point3 = {lat: 23.802389, lng: 90.391752};
+        var point4 = {lat: 23.794163, lng: 90.388435};
+        var point5 = {lat: 23.805332, lng: 90.394294};
+		var point6=  {lat: 23.808569, lng: 90.380636};
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru,
+		  mapTypeId:google.maps.MapTypeId.HYBRID
+		  
+        });
+		map.setTilt(45);
+        var contentString = "Altitude: 80 meter";
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          title: 'Altitude: 80 meter',
+		  icon: 'tower.jpg'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      
+	  
+	  var infowindow1 = new google.maps.InfoWindow({
+          content: 'Altitude: 100 meter'
+        });
+	  var marker1 = new google.maps.Marker({
+          position: point1,
+          map: map,
+          title: 'Altitude: 100 meter',
+		  icon: 'tower.jpg'
+        });
+        marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+		
+		var infowindow2 = new google.maps.InfoWindow({
+          content: 'Altitude: 200 meter'
+        });
+		
+		var marker2 = new google.maps.Marker({
+          position: point2,
+          map: map,
+          title: 'Altitude: 200 meter',
+		  icon: 'tower.jpg'
+        });
+        marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+		
+		var infowindow3 = new google.maps.InfoWindow({
+          content: 'Altitude: 150 meter'
+        });
+		var marker3 = new google.maps.Marker({
+          position: point3,
+          map: map,
+          title: 'Altitude: 150 meter',
+		  icon: 'tower.jpg'
+        });
+        marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+		
+		var infowindow4 = new google.maps.InfoWindow({
+          content: 'Altitude: 90 meter'
+        });
+		var marker4 = new google.maps.Marker({
+          position: point4,
+          map: map,
+          title: 'Altitude: 90 meter',
+		  icon: 'tower.jpg'
+        });
+        marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+      
+	  var infowindow5 = new google.maps.InfoWindow({
+          content: 'Altitude: 120 meter'
+        });
+	  var marker5 = new google.maps.Marker({
+          position: point5,
+          map: map,
+          title: 'Altitude: 120 meter',
+		  icon: 'tower.jpg'
+        });
+        marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+		
+		var infowindow6 = new google.maps.InfoWindow({
+          content: 'Altitude: 180 meter'
+        });
+	  var marker6 = new google.maps.Marker({
+          position: point5,
+          map: map,
+          title: 'Altitude: 180 meter',
+		  icon: 'tower.jpg'
+        });
+        marker6.addListener('click', function() {
+          infowindow6.open(map, marker5);
+        });
+		
+		
+      }
+	  
+	  
+	  
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo4vqW4lA3gzVhnvNbcyhzgMcjNxQXnL4&callback=initMap">
+    </script>
+  </body>
+</html>

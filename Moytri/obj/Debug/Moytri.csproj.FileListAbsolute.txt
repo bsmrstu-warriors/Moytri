@@ -1,0 +1,12 @@
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\bin\Debug\Moytri.exe.config
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\bin\Debug\Moytri.exe
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\bin\Debug\Moytri.pdb
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\obj\Debug\Moytri.csprojResolveAssemblyReference.cache
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\obj\Debug\Moytri.Form1.resources
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\obj\Debug\Moytri.Properties.Resources.resources
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\obj\Debug\Moytri.csproj.GenerateResource.Cache
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\obj\Debug\Moytri.exe
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\obj\Debug\Moytri.pdb
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\bin\Debug\GMap.NET.Core.dll
+c:\users\klayton\documents\visual studio 2015\Projects\Moytri\Moytri\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Klayton\documents\visual studio 2015\Projects\Moytri\Moytri\obj\Debug\Moytri.Form2.resources

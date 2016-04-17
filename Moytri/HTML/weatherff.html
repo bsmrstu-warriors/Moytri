@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>weather Details</title>
+
+<script>
+function loadDoc() {
+
+	var xhttp;
+	if (window.XMLHttpRequest){
+	
+   xhttp = new XMLHttpRequest();
+   
+   }
+   else{
+	xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+   }
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+     document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+	
+  };
+  xhttp.open("POST", "getWhff.php?", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("lat=23.794972&lon=90.392350");
+} 
+
+</script>
+
+<style>
+
+h2{
+	text-align: center;
+	font-family: verdana;
+	color: black;
+}
+body {
+    background-image: url("weather_back.jpg");
+}
+
+</style>
+
+
+</head>
+<body >
+
+
+
+<script>
+loadDoc();
+</script>
+<div id="demo"></div>
+
+
+</body>
+</html> 
